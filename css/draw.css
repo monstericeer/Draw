@@ -1,0 +1,23 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: url(../image/myBlogBackgroundimage.png);
+}
+
+#cas {
+	border: 3px solid #888;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	background: #fff;
+}
+
+#cas:hover {
+	cursor: url('../image/pen.png'), default;
+}
