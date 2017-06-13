@@ -14,6 +14,7 @@ $('.clearBox').on('touchend',function(){
 		if(confirm('确认清空？')){
 			cas.width = cas.width;
 			cas.height = cas.height;
+			haveSomething = false;
 		}
 	}
 })
