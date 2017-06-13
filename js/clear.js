@@ -10,8 +10,10 @@ $('.clearBox').on('touchend',function(){
 	sizeIn();
 	rubberIn();
 	
-	if(confirm('确认清空？')){
-		cas.width = cas.width;
-		cas.height = cas.height;
+	if(haveSomething){
+		if(confirm('确认清空？')){
+			cas.width = cas.width;
+			cas.height = cas.height;
+		}
 	}
 })
