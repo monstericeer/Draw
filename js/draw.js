@@ -1,6 +1,6 @@
 var cas = document.querySelector("#cas");
 if(window.innerWidth<800){
-	cas.width = window.innerWidth * 0.9;
+	cas.width = window.innerWidth * 0.94;
 	cas.height = window.innerHeight * 0.8;
 }else {
 	cas.width = window.innerWidth * 0.7;
@@ -31,7 +31,6 @@ function drawStart(evt) {
 		//context.fillRect(x,y,width,height);
 		ctx.fillRect(touches[i].pageX-el.offsetLeft-(line_width/2),touches[i].pageY-el.offsetTop-(line_width/2),line_width,line_width)
 	}
-	
 }
 
 function drawMove(evt) {
@@ -98,5 +97,8 @@ function ongoingTouchIndexById(idToFind) {
   	}
   	return -1;
 }
+
+
+
 
 

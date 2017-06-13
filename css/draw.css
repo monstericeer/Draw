@@ -10,7 +10,7 @@ body {
 #cas {
 	border: 3px solid #888;
 	margin-top: 1rem;
-	margin-left: 5%;
+	margin-left: 3%;
 	background: #fff;
 }
 
@@ -20,22 +20,24 @@ body {
 	#tools {
 		width: calc(100%-30px);
 		padding: 1rem 1rem;
-		/*background: #DCDCDC;*/
 	}
 	.toolBox {
 		width: 3rem;
 		height: 3rem;
 		float: left;
 		margin: 1rem 8%;
-		/*background: #FFF;*/
 		border-radius: 50%;
 	}
 	.sizeBox,
-	.colorBox {
+	.colorBox,
+	.rubberBox,
+	.clearBox {
 		position: relative;
 	}
 	.size,
-	.color {
+	.color,
+	.rubber,
+	.clear {
 		width: 100%;
 		height: 100%;
 		display: inline-block;
@@ -49,7 +51,10 @@ body {
 		border-radius: 50%;
 		z-index: 0; 
 		background: url(../image/lineWidth.png);
-		background-size: 100%;
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position-x: .6rem;
+		background-position-y: .6rem;
 	}
 	.c0 { 
 		width: 90% !important;
@@ -57,7 +62,28 @@ body {
 		border-radius: 0;
 		z-index: 0; 
 		background: url(../image/color.png);
-		background-size: 100%;
+		background-size: 80%;
+		background-repeat: no-repeat;
+		background-position-x: .6rem;
+		background-position-y: .6rem;
+	}
+	.r0 { 
+		width: 100%;
+		height: 100%;
+		border-radius: 50%;
+		z-index: 0; 
+		background: url(../image/rubber.png);
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position-x: .6rem;
+		background-position-y: .6rem;
+	}
+	.clear {
+		background: url(../image/clear.png);
+		background-size: 70%;
+		background-repeat: no-repeat;
+		background-position-x: .4rem;
+		background-position-y: .4rem;
 	}
 	
 	.sizeWeight {
@@ -66,9 +92,13 @@ body {
 		margin: auto;
 		margin-top: 42%;
 	}
+	.rubberWeight {
+		border: .1rem solid #000;
+	}
 	
 	.s1,.s2,.s3,.s4,
-	.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8 {
+	.c1,.c2,.c3,.c4,.c5,.c6,.c7,.c8,
+	.r1,.r2,.r3 {
 		background: #FFF;
 		opacity: 0;
 		box-shadow: 2px 2px 4px rgba(0,0,0,.3);
@@ -87,10 +117,18 @@ body {
 	.c7 { z-index: 70;background: rgb(86, 152, 196); }
 	.c8 { z-index: 80;background: rgb(252,146,59); }
 	
+	.r1 { z-index: 10; }
+	.r2 { z-index: 20; }
+	.r3 { z-index: 30; }
+	
 	.s1 > div { width: 4px;height: 4px; }
 	.s2 > div { width: 8px;height: 8px; }
 	.s3 > div { width: 12px;height: 12px; }
 	.s4 > div { width: 15px;height: 15px; }
+	
+	.r1 > div { width: .3rem;height: .3rem; margin: 1.25rem 0 0 1.25rem; }
+	.r2 > div { width: .5rem;height: .5rem; margin: 1.15rem 0 0 1.15rem; }
+	.r3 > div { width: .8rem;height: .8rem; margin: 1rem 0 0 1rem; }
 	
 	
 	

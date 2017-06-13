@@ -11,12 +11,14 @@ $('.sizeBox').on('touchstart',function(){
 
 var sizeTog = true;
 $('.sizeBox').on('touchend',function(){
+	isRubber = false;
 	$('.s0').css('opacity','1');
 	
 	if(sizeTog){
 		sizeTog = !sizeTog;
 		sizeOut();
-		colorIn()
+		colorIn();
+		rubberIn();
 	}else{
 		sizeTog = !sizeTog;
 		sizeIn()
@@ -28,6 +30,10 @@ for(var i=1;i<=lineWidth_arr.length;i++){
 	(function(j){
 		$('.s'+j).on('touchend',function(){
 			line_width = lineWidth_arr[j-1];
+			
+			if(line_color == '#FFF'){
+				line_color = '#000';
+			}
 		});
 	})(i)
 }
