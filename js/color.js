@@ -14,7 +14,7 @@ var lineColor_arr = [
 var line_color = lineColor_arr[0];
 
 $('.colorBox').on('touchstart',function(){
-	$('.s0').css('opacity','0.8');
+	$('.c0').css('opacity','0.8');
 })
 
 var colorTog = true;
