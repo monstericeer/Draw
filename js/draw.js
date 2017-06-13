@@ -7,6 +7,7 @@ if(window.innerWidth<800){
 	cas.height = window.innerHeight * 0.9;
 }
 
+var haveSomething = false;
 	
 cas.addEventListener('touchstart',drawStart,false);
 cas.addEventListener('touchmove',drawMove,false);
@@ -31,6 +32,7 @@ function drawStart(evt) {
 		//context.fillRect(x,y,width,height);
 		ctx.fillRect(touches[i].pageX-el.offsetLeft-(line_width/2),touches[i].pageY-el.offsetTop-(line_width/2),line_width,line_width)
 	}
+	haveSomething = true;
 }
 
 function drawMove(evt) {
